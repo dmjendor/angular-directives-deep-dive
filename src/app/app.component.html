@@ -1,0 +1,15 @@
+<main>
+  <app-learning-resources />
+
+  <hr />
+
+  <app-auth />
+
+  @if (isAdmin()) {
+  <p>Only admins should see this!</p>
+  }
+  <!-- Before angular 17 
+   <span> Structural Directive </span>
+  <p *ngIf="isAdmin()">Only admins should see this!</p>
+  -->
+</main>
